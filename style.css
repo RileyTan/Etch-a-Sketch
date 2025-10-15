@@ -7,9 +7,6 @@ h1 {
     font-size: 70px;
 }
 
-body > * {
-    border: 2px solid red;
-}
 
 .neon {
   color: #ee2b2b;
@@ -20,8 +17,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 0;
 }
 
 .column {
@@ -33,7 +30,7 @@ body {
 
 #container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .row {
@@ -44,9 +41,12 @@ body {
 .buttons {
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
+    margin-bottom: 20px;
 }
 
-h2 {
-    padding: 5px 10px;
+button {
+    padding: 0 20px;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    width: 150px;
 }
