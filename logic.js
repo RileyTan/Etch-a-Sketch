@@ -16,6 +16,7 @@ for (let squares = 0; squares < SQUARES; squares++) {
     containerOfSquares.insertAdjacentElement("beforeend", row)
 }
 
+// code to make hover effect 
 const cells = document.querySelectorAll(".column")
 cells.forEach(cell => {
     cell.addEventListener("mouseenter", event => {
@@ -24,4 +25,10 @@ cells.forEach(cell => {
                              ${Math.floor(Math.random() * 256)})`
         event.currentTarget.style.backgroundColor = randomColor
     })
+})
+
+// code to prompt user for number of squares per side
+const setGrid = document.querySelector("#set-grid")
+setGrid.addEventListener("click", () => {
+    prompt("")
 })
