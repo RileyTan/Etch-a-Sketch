@@ -27,16 +27,24 @@ body {
     gap: 10px;
 }
 
-.column {
-    width: 35px;
-    height: 35px;
-    background-color: lightgrey;
-    border: 1px solid white;
+.buttons { /* entire row containing 2 buttons is a flex container */
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+
+button {
+    padding: 0 20px;
+    width: 150px;
 }
 
 #container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: auto;
+    border: 2px solid red;
     flex-grow: 0; /* to make the container with the buttons and grid the same size 
     regardless of number of squares*/
 }
@@ -46,16 +54,13 @@ body {
     gap: 0;
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+.column {
+    width: 35px;
+    height: 35px;
+    background-color: lightgrey;
+    border: 1px solid white;
 }
 
-button {
-    padding: 0 20px;
-    width: 150px;
-}
 
 footer {
     display: block;
