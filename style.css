@@ -29,7 +29,7 @@ body {
 .buttons { /* entire row containing 2 buttons is a flex container */
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    gap: 280px;
 }
 
 button {

@@ -38,3 +38,10 @@ setGrid.addEventListener("click", () => {
 })
 
 // code to reset grid 
+const resetGrid = document.querySelector("#reset-grid")
+resetGrid.addEventListener("click", () => {
+    const cells = document.querySelectorAll(".column")
+    cells.forEach(cell => {
+        cell.style.backgroundColor = "lightgrey"
+    })
+})
